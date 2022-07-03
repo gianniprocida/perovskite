@@ -17,7 +17,6 @@
       <li> gaussian.job</li>
   </ul>
     <h2> Python files</h2>
-    <p> (Same files) </p>
     <ul>
      <li> bromine_perovskite/lumo.py, chlorine_perovskite/lumo.py, iodine_perovskite/lumo.py (same file) </li>
       <li> bromine_perovskite/homo.py, chlorine_perovskite/homo.py, iodine_perovskite/homo.py (same file) </li>
