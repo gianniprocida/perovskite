@@ -1,0 +1,7 @@
+molecule hour minute second
+ACN 3 4 43.4
+DMF 19 8 1.7
+DMSO 12 23 22.4
+GBL 2 0 12.8
+NMP 18 12 35.0
+PC 4 44 14.1

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --job-name=opt/freq        
+#SBATCH --partition=mpcl.p          # partition
+#SBATCH --time=0-12:00:00            # wallclock time d-hh:mm:ss
+#SBATCH --ntasks=1                  # only one task for G09
+#SBATCH --cpus-per-task=24          # multiple cpus per task 
+#SBATCH --mem=16gb
+#SBATCH --gres=tmpdir:100G          # reserve 100G on local /scratch
+
+cd $SLURM_SUBMIT_DIR
+
+
+module load hpc-env/6.4
+module load gaussian/g16.c01
+INPUTFILE=h2o
+g16run $INPUTFILE
+
+mv /user/edba4025/g16/CHK/h2o .
+gzip -d h2o.chk.gz
+formchk h2o.chk
+                                  
