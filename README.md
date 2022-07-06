@@ -31,13 +31,13 @@
      <h2>Description</h2>
     <ul>
         <li> gaussian.job : SLURM submission script</li>
-        <li> ParsingCputime.sh: It returns a file containing
+        <li> ParsingCputime.sh returns a file containing
              cpu time for each TD-DFT/PCM calculation located in all subdirectories of the directory in which the scripts is called
              </li>
-        <li>  uvvvis.py : It plots absorption spectrum using a single TD-DFT/PCM calculation   </li>
-        <li> homo.py : It pulls negative
+        <li>  uvvvis.py plots absorption spectrum using a single TD-DFT/PCM calculation   </li>
+        <li> homo.py pulls negative
         eigenvalues from all TD-DFT/PCM calculations of the folder in which the scripts is called.</li>
-        <li> lumo.py : It pulls  positive
+        <li> lumo.py pulls  positive
         eigenvalues from all TD-DFT/PCM calculations of the folder in which the scripts is called.
             chlorine_perovskite/lumo.py or iodine_perovskite/lumo.py </li>
          <li> *.out : Gaussian calculations  </li>
